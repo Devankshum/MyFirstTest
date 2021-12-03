@@ -1,4 +1,4 @@
-import React,{useState,createContext,useMemo} from 'react';
+import React,{useState} from 'react';
 import {
   Button,
   View,
@@ -7,9 +7,16 @@ import {
 
 const App = () => {
   
+  const [value, SetValue] = useState({
+    counter : 1
+  })
+
+  const {counter} = value;
+
   return (
             <View>
               <Text>Hello World</Text>
+              <Text>Counter : {counter}</Text>
             </View>            
           )
 }
