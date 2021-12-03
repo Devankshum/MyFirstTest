@@ -10,6 +10,7 @@ const Dashboard = () => {
   return (
             <View>
               <Text>Dashboard</Text>
+              <Text>Dashboard CHECK</Text>
             </View>            
           )
 }
